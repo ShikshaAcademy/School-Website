@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .carousel-buddy {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .carousel-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .icon {
+            font-size: 40px;
+            cursor: pointer;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        /* Styling for the large card */
+        .card-large {
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            font-family: Arial;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .card-large img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-large h1 {
+            font-size: 22px;
+        }
+
+        .card-large p {
+            margin: 10px 0;
+        }
+
+        .card-large a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #333;
+            padding: 0 5px;
+        }
+
+        .card-large button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        /* Styling for the small cards */
+        .card-small {
+            width: 180px;
+            background-color: white;
+            text-align: center;
+            font-family: Arial;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .card-small img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-small h1 {
+            font-size: 20px;
+        }
+
+        .card-small p {
+            margin: 5px 0;
+        }
+
+        .card-small a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            padding: 0 5px;
+        }
+
+        .card-small button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        /* Layout for the rows of small cards */
+        .small-card-rows {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 6 cards per row */
+            gap: 10px; /* Spacing between cards */
+        }
+        @media screen and (max-width: 40em) {
+            .card-row {
+                display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 6 cards per row */
+            gap: 10px; /* Spacing between cards */
+        }
+        }
+        /* Hover effect for cards */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img class="logo__img" src="Slice 19.png" ></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Events</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+           
+           
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          
+        </div>
+      </nav>
+
+<!--Carousel -->
+<div class="carousel-buddy">
+    <div class="carousel-container">
+        <!-- Main Carousel with Navigation -->
+        <div class="carousel-navigation">
+            <div class="icon" id="prev">&#10094;</div>
+            <div class="card card-large" id="carousel-card">
+                <img src="https://via.placeholder.com/300x200" alt="John">
+                <h1>BaliRam Kushwah</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Harvard University</p>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <p><button>Contact</button></p>
+            </div>
+            <div class="icon" id="next">&#10095;</div>
+        </div>
+
+        <!-- Two Rows of Small Cards (6 per row) -->
+        <div class="small-card-rows">
+            <!-- First Row -->
+            <div class="card-row">
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Jane">
+                    <h1>Ajay Kushwah</h1>
+                    <p class="title">Designer</p>
+                    <p>Stanford University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Vijay Kushwah</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Mike">
+                    <h1>Pinki Kushwah</h1>
+                    <p class="title">Lawyer</p>
+                    <p>Harvard University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <!-- Add 4 more cards here for this row -->
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Emily">
+                    <h1>Emily White</h1>
+                    <p class="title">Marketing</p>
+                    <p>NYU</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="John">
+                    <h1>John Doe</h1>
+                    <p class="title">CEO</p>
+                    <p>Harvard University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <!-- Add 2 more cards -->
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Kate">
+                    <h1>Kate Wilson</h1>
+                    <p class="title">Engineer</p>
+                    <p>MIT</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add the second row -->
+            <div class="card-row">
+                <!-- Add 6 more cards here -->
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Alice">
+                    <h1>Alice Johnson</h1>
+                    <p class="title">Professor</p>
+                    <p>Yale University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Chris Paul</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Chris Paul</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Chris Paul</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Chris Paul</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+                <div class="card card-small">
+                    <img src="https://via.placeholder.com/180x120" alt="Chris">
+                    <h1>Chris Paul</h1>
+                    <p class="title">Architect</p>
+                    <p>Princeton University</p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <p><button>Contact</button></p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const cards = [
+        {
+            name: "BaliRam Kushwaha",
+            title: "CEO & Founder, Example",
+            university: "Harvard University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "Ajay Kushwaha",
+            title: "Designer",
+            university: "Stanford University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "Vijay Kushwaha",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "Pinki Kushwaha",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: " 5",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "6",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "7",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "8",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        {
+            name: "9",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },{
+            name: "10",
+            title: "Architect",
+            university: "Princeton University",
+            img: "https://via.placeholder.com/300x200"
+        },
+        // Add more card details as needed
+    ];
+
+    let currentIndex = 0;
+
+    const cardElement = document.getElementById('carousel-card');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    function updateCard(index) {
+        const card = cards[index];
+        cardElement.querySelector('img').src = card.img;
+        cardElement.querySelector('h1').textContent = card.name;
+        cardElement.querySelector('.title').textContent = card.title;
+        cardElement.querySelector('p:nth-of-type(2)').textContent = card.university;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
+        updateCard(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
+        updateCard(currentIndex);
+    });
+
+    // Initialize the first card
+    updateCard(currentIndex);
+</script>
+
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <span class="myarrow">&#8593;</span></button>
+
+  <!-- footer -->
+<footer class="footer">
+  <div class="footer__container">
+      <div class="footer__top">
+          <div class="company__info" >
+             <img src="foot.png" height="100%" width="80%"></img>
+             
+          </div>
+          <div style="display: flex; padding: 0rem 0rem 3rem 2rem;">
+              <div class="footer__section-0" style="width: 50%; padding-left: 2rem;">
+                  <h6 class="footer__title">Quick Links -</h6>
+                  <ul class="footer__list-0">
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Home</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">About Us</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">The School</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Resume Upload</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Curriculum</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Events</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Past Achivers</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Admission</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Fees Structure</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Bus Facilities</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer__section-1" >
+                  <h6 class="footer__title">Contact Us -</h6>
+                  <ul class="footer__list-1">
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Tel : 9131871767 (Office)</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Email : shikshaacademy@gmail.com</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Website : shikshaacademy.in</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Sitemap</a>
+                      </li>
+                  </ul>
+                  <h6 class="footer__title">Address</h6>
+                  <ul class="footer__list-1">
+                      <li class="footer__list-item" style="gap: 0;">
+                          <a href="" class="footer__list-link" style="gap:1rem"><b>Shiksha Academy</b></a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link" style="gap:1rem">Gram Siltiya, Pandhana Road</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link"style="gap:1rem">Khandwa - 452002 </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link"style="gap:1rem">Madhya Pradesh</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+         
+         
+
+          <div class="footer__section-2 ">
+              <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.7462040446935!2d76.2390030247329!3d21.71257841394234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd817f4c4026421%3A0xfdac67fbac9e7dc7!2sShiksha%20Academy!5e0!3m2!1sen!2sin!4v1703789673736!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      <center class="copyright">&copy;2021 Shiksha Academy. All rights reserved.</center>
+  </div>
+</footer>
+<script>
+  // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

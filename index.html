@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration and Visualization</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- https://freefrontend.com/css-menu/
+    https://css-tricks.com/snippets/css/typewriter-effect/ -->
+    
+</head>
+<!-- <body style="background-image: url('Slice\ 2.png');"> -->
+<body>
+    <div class="nk-mask bg-pattern-dot-white-sm bg-blend-bottom">
+
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img class="logo__img" src="Slice 19.png" ></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Events</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+           
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          
+        </div>
+      </nav>
+      
+    </div>
+    <section>
+      <div class="container">
+          <div class="carousel">
+              <input type="radio" name="slides" checked="checked" id="slide-1">
+              <input type="radio" name="slides" id="slide-2">
+              <input type="radio" name="slides" id="slide-3">
+              <input type="radio" name="slides" id="slide-4">
+              <input type="radio" name="slides" id="slide-5">
+              <input type="radio" name="slides" id="slide-6">
+              <ul class="carousel__slides">
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1041/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Our topper
+                              <span class="credit">Photo: Tim Marshall</span>
+                          </figcaption>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1043/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              <span class="credit">Photo: Christian Joudrey</span>                            
+                          </figcaption>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1044/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              <span class="credit">Photo: Steve Carter</span>                            
+                          </figcaption>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1045/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                          </figcaption>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1049/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              <span class="credit">Photo: Rosan Harmens</span>                            
+                          </figcaption>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="https://picsum.photos/id/1052/800/450" alt="">
+                          </div>
+                          <figcaption>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              <span class="credit">Photo: Annie Spratt</span>                            
+                          </figcaption>
+                      </figure>
+                  </li>
+              </ul>    
+              <ul class="carousel__thumbnails">
+                  <li>
+                      <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                  </li>
+                  <li>
+                      <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                  </li>
+                  <li>
+                      <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                  </li>
+                  <li>
+                      <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                  </li>
+                  <li>
+                      <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                  </li>
+                  <li>
+                      <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  
+<div class="img-pri">
+  <div class="row">
+    <div class="column"  style="position: relative; padding-left: 15%; top:50px">
+      <img src="Principlesirimg.jpg" class="img__sir" ></img>
+    </div>
+    <div class="column-11" style=" position: relative; top:50px; padding-right: 15%;">
+      
+      <p class="heading_1">From the <b>Principal's Desk</b></p class="heading_1">
+       <p class="heading_2">Dear Students, Parents, and Esteemed Faculty,</p>
+        
+       <p class="heading_3">It is with great pleasure and a sense of profound responsibility that I welcome you to Shiksha Academy, a haven for holistic education and character development. As the proud principal of this esteemed institution, I am honored to lead a dedicated team of educators who are committed to nurturing young minds and empowering them for a bright future.
+        
+        At Shiksha Academy, we believe in providing an environment that fosters not only academic excellence but also instills values that shape individuals into responsible global citizens. Our mission is to ignite the spark of curiosity in every student, encouraging them to explore the vast realms of knowledge and develop a love for learning.<br>
+        <br>
+        
+        In our pursuit of excellence, we are guided by a vision that goes beyond textbooks. Shiksha Academy is not just a school; it is a community where ideas are explored, talents are nurtured, and dreams take flight. Our state-of-the-art facilities, experienced faculty, and innovative teaching methodologies are designed to inspire creativity, critical thinking, and a passion for lifelong learning.<br>
+        <br>
+        <br>
+        
+       </p>
+        
+    </div>
+  </div>
+</div>
+<div class="heading_3" style="text-align: justify; padding-left: 15%; padding-right: 15%; background-color: #f4f4f4;">
+    <br>
+    As we embark on another academic year, I encourage our students to embrace challenges, cultivate resilience, and uphold the values that define our academy. Parents, your partnership is invaluable, and we look forward to working collaboratively to provide the best possible educational experience for your children.<br>
+    
+    
+    Together, let us create a learning journey filled with curiosity, discovery, and growth. Shiksha Academy is not just a place of education; it is a beacon of hope for a future where knowledge empowers and transforms lives.<br>
+    
+    I extend my warmest wishes to each member of the Shiksha Academy family for a successful and fulfilling academic year.<br>
+    <br>
+    
+    With sincerity and dedication,<br>
+    <br>
+    
+    Ajay Kushwaha<br>
+    Principal<br>
+    Shiksha Academy<br>
+    
+    </p> 
+</div>
+<div class="img-prime">
+    <div class="row">
+      <div class="column-1">
+        <div class="gallery">
+            <input type="checkbox" >
+            <img src="https://picsum.photos/id/1028/300/300" alt="a forest after an apocalypse">
+            <img src="https://picsum.photos/id/15/300/300" alt="a waterfall and many rocks">
+            <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
+            <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
+            <img src="https://picsum.photos/id/136/300/300" alt="big rocks with some trees">
+            <img src="https://picsum.photos/id/1039/300/300" alt="a waterfall, a lot of tree and a great view from the sky">
+            <img src="https://picsum.photos/id/110/300/300" alt="a cool landscape">
+            <img src="https://picsum.photos/id/1047/300/300" alt="inside a town between two big buildings">
+            <img src="https://picsum.photos/id/1057/300/300" alt="a great view of the sea above the mountain">
+          </div>
+      </div>
+      <div class="column-1 ">
+        <div class="gallery">
+            <input type="checkbox" >
+            <img src="https://picsum.photos/id/1028/300/300" alt="a forest after an apocalypse">
+            <img src="https://picsum.photos/id/15/300/300" alt="a waterfall and many rocks">
+            <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
+            <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
+            <img src="https://picsum.photos/id/136/300/300" alt="big rocks with some trees">
+            <img src="https://picsum.photos/id/1039/300/300" alt="a waterfall, a lot of tree and a great view from the sky">
+            <img src="https://picsum.photos/id/110/300/300" alt="a cool landscape">
+            <img src="https://picsum.photos/id/1047/300/300" alt="inside a town between two big buildings">
+            <img src="https://picsum.photos/id/1057/300/300" alt="a great view of the sea above the mountain">
+          </div>
+         </div>
+    </div>
+  </div>
+
+<!-- FAQ -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <span class="myarrow">&#8593;</span></button>
+
+    <h1>FAQ</h1>
+
+<div id="my-unique-accordion" class="accordion">
+  <!-- Accordion Item 1 -->
+  <div class="accordion-item">
+    <div class="accordion-item-header">1. Is there a bus facility from School?</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+       Yes
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">2. How do I apply for admission to Shiksha Academy?</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        To apply for admission to Shiksha Academy, you can visit our website and complete the online application form. Alternatively, you can contact the admissions office for a physical application or more information.
+       </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">3. Scholoorship</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+       Contact office </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">4. What are the tuition fees for [Grade/Level]?</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Tuition fees vary based on the grade or level of the student. For specific details regarding tuition fees, please refer to our tuition schedule available on our website or contact the finance office directly.
+    </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header"> 5. What facilities does the school offer (e.g., libraries, laboratories, sports facilities)?</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Shiksha Academy provides state-of-the-art facilities, including well-equipped libraries, modern laboratories for scientific exploration, and extensive sports facilities catering to a wide range of interests and athletic abilities.
+        </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">  6. How does Shiksha Academy prepare students for college or higher education?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Shiksha Academy offers comprehensive college preparatory programs that include counseling, standardized test preparation, and guidance through the college application process. Our curriculum is designed to develop critical thinking, problem-solving skills, and academic excellence, ensuring our students are well-equipped for higher education.
+        Feel free to adapt these answers according to the specifics of your school's offerings Shiksha Academy  </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">7. What kind of curriculum does Shiksha Academy follow?</div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Shiksha Academy follows a comprehensive curriculum that integrates both traditional subjects and innovative learning approaches. Our curriculum is designed to meet national standards while fostering critical thinking, creativity, and practical skills.
+       
+       </div>
+    </div>
+  </div>
+  <!-- ... (rest of your accordion items) ... -->
+</div>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="company__info" >
+               <img src="foot.png" height="100%" width="80%"></img>
+               
+            </div>
+            <div style="display: flex; padding: 0rem 0rem 3rem 2rem;">
+                <div class="footer__section-0" style="width: 50%; padding-left: 2rem;">
+                    <h6 class="footer__title">Quick Links -</h6>
+                    <ul class="footer__list-0">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Home</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">The School</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Resume Upload</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Curriculum</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Events</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Past Achivers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Admission</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Fees Structure</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Bus Facilities</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section-1" >
+                    <h6 class="footer__title">Contact Us -</h6>
+                    <ul class="footer__list-1">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Tel : 9131871767 (Office)</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Email : shikshaacademy@gmail.com</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Website : shikshaacademy.in</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                    <h6 class="footer__title">Address -</h6>
+                    <ul class="footer__list-1">
+                        <li class="footer__list-item" style="gap: 0;">
+                            <a href="" class="footer__list-link" style="gap:1rem"><b>Shiksha Academy</b></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link" style="gap:1rem">Gram Siltiya, Pandhana Road</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link"style="gap:1rem">Khandwa - 452002 </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link"style="gap:1rem">Madhya Pradesh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+           
+
+            <div class="footer__section-2 ">
+                <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.7462040446935!2d76.2390030247329!3d21.71257841394234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd817f4c4026421%3A0xfdac67fbac9e7dc7!2sShiksha%20Academy!5e0!3m2!1sen!2sin!4v1703789673736!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <center class="copyright">&copy; Copyright &copy; 2024 Shiksha Academy Pandhana. All rights reserved.</center>
+    </div>
+</footer>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const myUniqueAccordion = document.querySelector("#my-unique-accordion");
+const accordionItemHeaders = myUniqueAccordion.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    // const currentlyActiveAccordionItemHeader = myUniqueAccordion.querySelector(".accordion-item-header.active");
+    // if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
+
+

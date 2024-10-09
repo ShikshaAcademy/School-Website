@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    
+    </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img class="logo__img" src="Slice 19.png" ></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Events</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+           
+           
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          
+        </div>
+      </nav>
+<!-- Header -->
+<div class="header">
+  <h1>School Activities</h1>
+  <p>We are family that study together blah blah </p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/wedding.jpg">
+      <img src="https://www.w3schools.com/w3images/rocks.jpg">
+      <img src="https://www.w3schools.com/w3images/falls2.jpg">
+      <img src="https://www.w3schools.com/w3images/paris.jpg">
+      <img src="https://www.w3schools.com/w3images/nature.jpg">
+      <img src="https://www.w3schools.com/w3images/mist.jpg">
+      <img src="https://www.w3schools.com/w3images/paris.jpg">
+    </div>
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg">
+      <img src="https://www.w3schools.com/w3images/ocean.jpg">
+      <img src="https://www.w3schools.com/w3images/wedding.jpg">
+      <img src="https://www.w3schools.com/w3images/mountainskies.jpg">
+      <img src="https://www.w3schools.com/w3images/rocks.jpg">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg">
+    </div>
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/wedding.jpg">
+      <img src="https://www.w3schools.com/w3images/rocks.jpg">
+      <img src="https://www.w3schools.com/w3images/falls2.jpg">
+      <img src="https://www.w3schools.com/w3images/paris.jpg">
+      <img src="https://www.w3schools.com/w3images/nature.jpg">
+      <img src="https://www.w3schools.com/w3images/mist.jpg">
+      <img src="https://www.w3schools.com/w3images/paris.jpg">
+    </div>
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg">
+      <img src="https://www.w3schools.com/w3images/ocean.jpg">
+      <img src="https://www.w3schools.com/w3images/wedding.jpg">
+      <img src="https://www.w3schools.com/w3images/mountainskies.jpg">
+      <img src="https://www.w3schools.com/w3images/rocks.jpg">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg">
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <span class="myarrow">&#8593;</span></button>
+
+  <!-- footer -->
+<footer class="footer">
+  <div class="footer__container">
+      <div class="footer__top">
+          <div class="company__info" >
+             <img src="foot.png" height="100%" width="80%"></img>
+             
+          </div>
+          <div style="display: flex; padding: 0rem 0rem 3rem 2rem;">
+              <div class="footer__section-0" style="width: 50%; padding-left: 2rem;">
+                  <h6 class="footer__title">Quick Links -</h6>
+                  <ul class="footer__list-0">
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Home</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">About Us</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">The School</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Resume Upload</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Curriculum</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Events</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Past Achivers</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Admission</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Fees Structure</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Bus Facilities</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer__section-1" >
+                  <h6 class="footer__title">Contact Us -</h6>
+                  <ul class="footer__list-1">
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Tel : 9131871767 (Office)</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Email : shikshaacademy@gmail.com</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Website : shikshaacademy.in</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link">Sitemap</a>
+                      </li>
+                  </ul>
+                  <h6 class="footer__title">Address</h6>
+                  <ul class="footer__list-1">
+                      <li class="footer__list-item" style="gap: 0;">
+                          <a href="" class="footer__list-link" style="gap:1rem"><b>Shiksha Academy</b></a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link" style="gap:1rem">Gram Siltiya, Pandhana Road</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link"style="gap:1rem">Khandwa - 452002 </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="" class="footer__list-link"style="gap:1rem">Madhya Pradesh</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+         
+         
+
+          <div class="footer__section-2 ">
+              <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.7462040446935!2d76.2390030247329!3d21.71257841394234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd817f4c4026421%3A0xfdac67fbac9e7dc7!2sShiksha%20Academy!5e0!3m2!1sen!2sin!4v1703789673736!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      <center class="copyright">&copy;2021 Shiksha Academy. All rights reserved.</center>
+  </div>
+</footer>
+<script>
+  // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

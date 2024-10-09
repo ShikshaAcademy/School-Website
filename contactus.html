@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shiksha Academy School</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        @media screen and (max-width: 40em) {
+            .contact-section{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-info .info-box {
+            flex-basis: 30%;
+            background-color: #e9e9e9;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info .info-box h3 {
+            margin-bottom: 10px;
+            color: #5cb85c;
+        }
+
+        .contact-info .info-box p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .contact-info .info-box a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+
+        .contact-info .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #4cae4c;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #3b5998;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            background-color: #555;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="nk-mask bg-pattern-dot-white-sm bg-blend-bottom">
+
+        <nav>
+            <div class="wrapper">
+              <div class="logo"><a href="#"><img class="logo__img" src="Slice 19.png" ></a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Events</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+               
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+              
+            </div>
+          </nav>
+          
+        </div>
+    <div class="container">
+        <!-- Heading -->
+        <h1>Contact Us</h1>
+        <p style="text-align: center;">We’d love to hear from you! Reach out to us with any questions or inquiries.</p>
+
+        <!-- Contact Information Section -->
+        <div class="contact-section">
+            <div class="contact-info">
+                <!-- Address Box -->
+                <div class="info-box">
+                    <h3>Address</h3>
+                    <p>ABC School<br>123 Main Street<br>City, State, 12345</p>
+                </div>
+
+                <!-- Phone Box -->
+                <div class="info-box">
+                    <h3>Phone</h3>
+                    <p>Call us at:<br><a href="tel:+1234567890">+1 234-567-890</a></p>
+                </div>
+
+                <!-- Email Box -->
+                <div class="info-box">
+                    <h3>Email</h3>
+                    <p>Email us at:<br><a href="mailto:admissions@abcschool.com">admissions@abcschool.com</a></p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" style="background-color: #3b5998;">F</a>
+            <a href="https://twitter.com" target="_blank" style="background-color: #1da1f2;">T</a>
+            <a href="https://linkedin.com" target="_blank" style="background-color: #0077b5;">L</a>
+            <a href="https://instagram.com" target="_blank" style="background-color: #e4405f;">I</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+         <!-- footer -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="company__info" >
+               <img src="foot.png" height="100%" width="80%"></img>
+               
+            </div>
+            <div style="display: flex; padding: 0rem 0rem 3rem 2rem;">
+                <div class="footer__section-0" style="width: 50%; padding-left: 2rem;">
+                    <h6 class="footer__title">Quick Links -</h6>
+                    <ul class="footer__list-0">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Home</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">The School</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Resume Upload</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Curriculum</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Events</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Past Achivers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Admission</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Fees Structure</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Bus Facilities</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section-1" >
+                    <h6 class="footer__title">Contact Us -</h6>
+                    <ul class="footer__list-1">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Tel : 9131871767 (Office)</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Email : shikshaacademy@gmail.com</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Website : shikshaacademy.in</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                    <h6 class="footer__title">Address -</h6>
+                    <ul class="footer__list-1">
+                        <li class="footer__list-item" style="gap: 0;">
+                            <a href="" class="footer__list-link" style="gap:1rem"><b>Shiksha Academy</b></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link" style="gap:1rem">Gram Siltiya, Pandhana Road</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link"style="gap:1rem">Khandwa - 452002 </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link"style="gap:1rem">Madhya Pradesh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+           
+
+            <div class="footer__section-2 ">
+                <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.7462040446935!2d76.2390030247329!3d21.71257841394234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd817f4c4026421%3A0xfdac67fbac9e7dc7!2sShiksha%20Academy!5e0!3m2!1sen!2sin!4v1703789673736!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <center class="copyright">&copy; Copyright &copy; 2024 Shiksha Academy Pandhana. All rights reserved.</center>
+    </div>
+</footer>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const myUniqueAccordion = document.querySelector("#my-unique-accordion");
+const accordionItemHeaders = myUniqueAccordion.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    // const currentlyActiveAccordionItemHeader = myUniqueAccordion.querySelector(".accordion-item-header.active");
+    // if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});
+
+
+</script>
+    </footer>
+
+</body>
+</html>

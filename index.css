@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+h3{
+    font-family: poppins;
+    font-family: 200;
+}
+
+.filter{
+display: inline-block;
+font-family: poppins;
+color: #02ccfe;
+font-weight: 500;
+font-size: 10px;
+padding-bottom: 20px;
+
+
+}
+input{
+    height: 20px;
+    width: 180px;
+}
+
+::placeholder {
+    color: grey;
+    font-family: poppins;
+    font-size: 10px;
+    text-align: center;
+    
+  }
+
+.page{
+    padding-left: 50px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 10px;
+    font-family: poppins;
+    font-size: 10px;
+    font-weight: 100;
+    color: #464646;
+    
+  }
+
+  td {
+    border: solid 1px grey;
+    border-style: none none solid none;
+    padding: 10px;
+    height:150px;
+    width:102px;
+    
+  }
+  th {
+    border: solid 1px grey;
+    border-style: none solid solid none;
+    padding: 10px;
+    height: 40px;
+  }
+  tr:first-child th:first-child { border-top-left-radius: 10px; }
+  tr:first-child th:last-child { border-top-right-radius: 10px; }
+  
+  tr:last-child th:first-child { border-bottom-left-radius: 10px; }
+  tr:last-child th:last-child { border-bottom-right-radius: 10px; }
+  
+  tr:first-child th { border-top-style: solid; }
+  tr th:first-child { border-left-style: solid; }
+  
+  tr:first-child td:first-child { border-top-left-radius: 10px; }
+  tr:first-child td:last-child { border-top-right-radius: 10px; }
+  
+  tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+  tr:last-child td:last-child { border-bottom-right-radius: 10px; 
+}
+tr:last-child td:first-child { border-style: none none solid solid ; }
+  tr:last-child td:last-child { border-style: none solid solid none; 
+}
+
+  
+  tr:first-child td { border-top-style: solid; }
+  tr td:first-child { border-left-style: solid; }
